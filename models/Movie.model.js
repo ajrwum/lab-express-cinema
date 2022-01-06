@@ -8,7 +8,7 @@ const movieSchema = new Schema({
   stars: [ String ],
   image: String,
   description: String,
-  showTimes: [ String ]
+  showtimes: [ String ]
 });
 
 // creating the db model for movies
