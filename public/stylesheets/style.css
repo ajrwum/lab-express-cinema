@@ -1,8 +1,116 @@
+/* MINIMALISTIC RESET */
+* {
+  margin: 0;
+}
+
+
+/* Original css */
+
 body {
-  padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
   color: #00B7FF;
 }
+
+
+/* HOME PAGE */
+
+#main {
+  background-image: url('/images/cinema.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+#main div {
+  box-sizing: content-box;
+  position: absolute;
+  top: 6rem;
+  right: 5vw;
+  width: 25rem;
+}
+
+#main h1 {
+  color: white;
+  font-size: 6em;
+  margin-bottom: .5em;
+}
+
+#main a {
+  background-color: white;
+  border-radius: 2em;
+  line-height: 2em;
+  padding: 1em 2em;
+  text-decoration: none;
+}
+
+
+/* MOVIES PAGE (all movies) */
+
+#movies {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 2em auto;
+  width: 80vw;
+}
+
+#movies p {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 1em 0 1.2em 0;
+}
+
+#movie-cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4em;
+  margin: 2rem auto;
+  width: 90%;
+}
+
+#card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+#card img {
+
+}
+
+#card p {
+  font-size: 1em;
+}
+
+
+/* MOVIE PAGE (1 movie) */
+
+#movie {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 3em;
+  margin: 2em auto;
+  width: 80vw;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.2em;
+  max-width: 60%;
+}
+
+ul {
+  padding: 0;
+  list-style-position: inside;
+}
+
